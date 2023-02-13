@@ -105,3 +105,14 @@ function filterItems(e){
       }
     });
   }
+//Adding data to local storage
+document.getElementById("my-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+  
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+  
+    localStorage.setItem("name", name);
+    localStorage.setItem("email", email);
+  });
+  
